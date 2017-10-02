@@ -122,6 +122,22 @@ def get_menu_choice():
     return menu_choice
 
 
+def manage_crop(crop):
+    print("this is the crop management program")
+    noexit = True
+    while noexit:
+        display_menu()
+        option = get_menu_choice()
+        if option == 1:
+            manual_grow(crop)
+        elif option == 2:
+            auto_grow(crop, 30)
+        elif option == 3:
+            print(crop.report())
+        elif option == 0:
+            noexit = False
+
+
 def main():
     # instantiate the class
     new_crop = Crop(2, 5, 5)
@@ -167,3 +183,10 @@ def main():
 if __name__ == "__main__":
     main()
 """
+
+def main2():
+    # instantiate the class
+    new_crop = Crop(2, 5, 5)
+    manage_crop(new_crop)
+
+main2()
