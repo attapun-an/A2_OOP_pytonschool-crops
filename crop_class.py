@@ -79,19 +79,47 @@ def manual_grow(crop):
     while light_check:
         try:
             light = int(input("light (1-10): "))
-            if 0 <= light <= 10:
+            if 1 <= light <= 10:
                 light_check = False
+            else:
+                print("Value not valid")
         except ValueError:
-            print("Invalid")
+            print("Invalid input")
 
     # using the variable naming/logic from the video
-    valid = False:
+    valid = False
     while not valid:
         try:
+            water = int(input("water (1-10):"))
+            if 1 <= water <= 10:
+                valid = True
+            else:
+                print("Value not valid")
+        except ValueError:
+            print("Invalid input")
+    crop.grow(light, water)
 
 
+def display_menu():
+    print("""
+    1. grow crop manually over 1 day
+    2. grow crop automatically over 30 days
+    3. report status
+    0. exit the test program
+     """)
 
-
+def get_menu_choice():
+    option_valid = False
+    while not option_valid:
+        try:
+            menu_choice = int(input("Please select an option: "))
+            if 0 <= menu_choice <= 3:
+                option_valid = False
+            else:
+                print("Value not valid")
+        except ValueError:
+            print("Invalid Input")
+    return menu_choice
 
 
 def main():
@@ -123,9 +151,19 @@ def main():
     new_crop.grow(4, 4)
     print(new_crop.report())
 
+    # tests auto grow
     auto_grow(new_crop, 30)
     print(new_crop.report())
 
+    # test the manual grow
+    new_crop2 = Crop(2, 3, 4)
+    print(new_crop2.report())
+    manual_grow(new_crop2)
+    print(new_crop2.report())
+
+
 # no idea how this is different from just main(). but it looks cool
+"""
 if __name__ == "__main__":
     main()
+"""
