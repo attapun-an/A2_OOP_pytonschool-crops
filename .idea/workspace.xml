@@ -16,10 +16,10 @@
       <file leaf-file-name="crop_class.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/crop_class.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="86" column="24" lean-forward="false" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
+            <state relative-caret-position="473">
+              <caret line="82" column="30" lean-forward="true" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
               <folding>
-                <element signature="e#3547#3724#1" expanded="false" />
+                <element signature="e#3578#3755#1" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -165,7 +165,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3547#3724#1" expanded="false" />
+            <element signature="e#3578#3755#1" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -175,7 +175,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3547#3724#1" expanded="false" />
+            <element signature="e#3578#3755#1" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -185,7 +185,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3547#3724#1" expanded="false" />
+            <element signature="e#3578#3755#1" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -195,17 +195,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3547#3724#1" expanded="false" />
+            <element signature="e#3578#3755#1" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crop_class.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="86" column="24" lean-forward="false" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
+        <state relative-caret-position="473">
+          <caret line="82" column="30" lean-forward="true" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
           <folding>
-            <element signature="e#3547#3724#1" expanded="false" />
+            <element signature="e#3578#3755#1" expanded="false" />
           </folding>
         </state>
       </provider>

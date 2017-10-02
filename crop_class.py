@@ -78,15 +78,17 @@ def manual_grow(crop):
     light_check = True
     while light_check:
         try:
-            light_check = int(input("light (1-10): "))
-            if 0 <= light_check <= 10:
+            light = int(input("light (1-10): "))
+            if 0 <= light <= 10:
                 light_check = False
         except ValueError:
             print("Invalid")
 
-    # using the variable
+    # using the variable naming/logic from the video
     valid = False:
-    while not valid
+    while not valid:
+        try:
+
 
 
 
