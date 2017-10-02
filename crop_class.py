@@ -83,7 +83,11 @@ def manual_grow(crop):
                 light_check = False
         except ValueError:
             print("Invalid")
-    
+
+    # using the variable
+    valid = False:
+    while not valid
+
 
 
 
