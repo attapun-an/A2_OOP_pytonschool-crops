@@ -114,7 +114,7 @@ def get_menu_choice():
         try:
             menu_choice = int(input("Please select an option: "))
             if 0 <= menu_choice <= 3:
-                option_valid = False
+                option_valid = True
             else:
                 print("Value not valid")
         except ValueError:
