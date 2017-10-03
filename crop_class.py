@@ -37,12 +37,12 @@ class Crop:
     # returns amount of light and water that crop requires to grow
     def needs(self):
         # returns a dictionary with light and water needs. Yay.
-        return{'light need': self._light_need, 'water need': self._light_need}
+        return {'light need': self._light_need, 'water need': self._light_need}
 
     # provides overview of current state
     def report(self):
         # returns a dictionary containing type, status, growth, days growing
-        return{'type': self._type, 'status': self._status, 'growth': self._growth, 'days growing': self._days_growing}
+        return {'type': self._type, 'status': self._status, 'growth': self._growth, 'days growing': self._days_growing}
 
     def _update_status(self):
         current_growth = self._days_growing
@@ -67,7 +67,7 @@ class Crop:
 
 
 def auto_grow(crop, days):
-    for days in range (days):
+    for days in range(days):
         light = random.randint(1, 10)
         water = random.randint(1, 10)
         crop.grow(light, water)
@@ -107,6 +107,7 @@ def display_menu():
     3. report status
     0. exit the test program
      """)
+
 
 def get_menu_choice():
     option_valid = False
@@ -161,7 +162,7 @@ def main():
     print(new_crop.needs())
     print(new_crop.report())
 
-    #printing only a portion
+    # printing only a portion
     print(new_crop.needs()['light need'])
 
     new_crop.grow(4, 4)
@@ -184,9 +185,12 @@ if __name__ == "__main__":
     main()
 """
 
+"""
 def main2():
     # instantiate the class
     new_crop = Crop(2, 5, 5)
     manage_crop(new_crop)
 
+
 main2()
+"""
