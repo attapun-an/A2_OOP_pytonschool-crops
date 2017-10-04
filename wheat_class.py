@@ -1,9 +1,12 @@
 from crop_class import *
 
 class Wheat(Crop):
+    """a wheat crop"""
 
     def __init__(self):
-        super.__init__(1, 8, 3)
+        # call the parent class constructor with a default value
+        # growth rate = 1; light need = 3; water need = 6
+        super().__init__(1, 8, 3)
         self._type = "Wheat"
 
     def grow(self, light, water):

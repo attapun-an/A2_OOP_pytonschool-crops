@@ -18,6 +18,7 @@ class Potato(Crop):
                 self._growth += self._growth_rate * 1.25
             else:
                 self._growth += self._growth_rate
+        self._days_growing += 1
         self._update_status()
 
 
@@ -30,7 +31,6 @@ def main():
     print(potato_crop.report())
 
 
-main()
 """
 if __name__ == "__main__":
     main()
