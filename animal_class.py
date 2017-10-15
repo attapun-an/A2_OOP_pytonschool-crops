@@ -3,7 +3,7 @@ import random
 
 class Animal:
     # constructor
-    def __init__(self, food_need, water_need):
+    def __init__(self, food_need, water_need, av_max_health):
         # weight represents growth of animal
         self._weight = random.randint(1,3)
         self._days_growing = 0
@@ -14,7 +14,8 @@ class Animal:
         self._type = "normal"
         self._name = "name"
         # triangular generates a bell curve random distribution
-        self.health = int((random.triangular()*10))
+        self.base_health = int((random.triangular()*av_max_health))
+        self.health = self.base_health
         # automatically grows one day
         self.grow(10, 10)
 
@@ -23,7 +24,7 @@ class Animal:
         if self.health > 0:
             return {'type': self._type, 'status': self._status, 'growth': self._weight, 'days growing': self._days_growing, 'age': age}
         else:
-            return """animal"""
+            return "this animal has been located to a nice farm in the countryside, away from cruel people like you who exploit them in your so called test. don't worry little one, those programmers will not hurt you anymore"
 
 
     def update_status(self):
@@ -46,13 +47,14 @@ class Animal:
         # if the animal
         if self.health < 0:
             # Holy meow, guys - that's so dark. Why would you add this???
-            print("this animal has been located to a nice farm in the countryside")
-
+            # print("this animal has been located to a nice farm in the countryside")
+            pass
         # if the animal has enough health to continue
         elif food >= self._food_need and water >= self._water_need:
             self._weight += self._growth_rate
+            self.health = self.base_health
         else:
-            self.health -= 1
+            self.health -= 0.2
         self._days_growing += 1
 
     # will try to have auto grow and manual grow in the class
@@ -90,7 +92,7 @@ class Animal:
 # test code
 def main():
     # generate animal
-    generic_animal = Animal(5, 5)
+    generic_animal = Animal(5, 5, 20)
     # report
     print(generic_animal.report())
     # grow for one day
