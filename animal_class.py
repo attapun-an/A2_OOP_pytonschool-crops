@@ -43,12 +43,15 @@ class Animal:
         return {'food_need': self._food_need, 'water_need': self._water_need}
 
     def grow(self, food, water):
+        # if the animal
         if self.health < 0:
             # Holy meow, guys - that's so dark. Why would you add this???
             print("this animal has been located to a nice farm in the countryside")
+
+        # if the animal has enough health to continue
         elif food >= self._food_need and water >= self._water_need:
             self._weight += self._growth_rate
-            self._days_growing += 1
+        self._days_growing += 1
 
     # will try to have auto grow and manual grow in the class
 
