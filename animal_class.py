@@ -23,7 +23,7 @@ class Animal:
         if self.health > 0:
             return {'type': self._type, 'status': self._status, 'growth': self._weight, 'days growing': self._days_growing, 'age': age}
         else:
-            return "away on vacation"
+            return """animal"""
 
 
     def update_status(self):
@@ -51,6 +51,8 @@ class Animal:
         # if the animal has enough health to continue
         elif food >= self._food_need and water >= self._water_need:
             self._weight += self._growth_rate
+        else:
+            self.health -= 1
         self._days_growing += 1
 
     # will try to have auto grow and manual grow in the class
