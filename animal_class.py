@@ -20,7 +20,11 @@ class Animal:
 
     def report(self):
         age = round(self._days_growing//365.25, 1)
-        return {'type': self._type, 'status': self._status, 'growth': self._weight, 'days growing': self._days_growing, 'age': age}
+        if self.health > 0:
+            return {'type': self._type, 'status': self._status, 'growth': self._weight, 'days growing': self._days_growing, 'age': age}
+        else:
+            return "away on vacation"
+
 
     def update_status(self):
         age = round(self._days_growing / 365.25, 1)
@@ -39,7 +43,7 @@ class Animal:
         return {'food_need': self._food_need, 'water_need': self._water_need}
 
     def grow(self, food, water):
-        if self.health <= 0:
+        if self.health < 0:
             # Holy meow, guys - that's so dark. Why would you add this???
             print("this animal has been located to a nice farm in the countryside")
         elif food >= self._food_need and water >= self._water_need:
@@ -47,6 +51,9 @@ class Animal:
             self._days_growing += 1
 
     # will try to have auto grow and manual grow in the class
+
+    # It would be ideal if the days were actually input inside to allow for validation
+    # but it's just easier for testing at the moment
     def auto_grow(self, days):
         for i in range(days):
             self.grow(random.randint(1, 10), random.randint(1, 10))
@@ -91,10 +98,12 @@ def main():
     # auto grow- 6 months
     generic_animal.auto_grow(30*3)
     # report
-    generic_animal.report()
+    print(generic_animal.report())
 
     # auto grow- a year
     generic_animal.auto_grow(366)
+    # report
+    print(generic_animal.report())
 
 
 
