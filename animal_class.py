@@ -13,7 +13,10 @@ class Animal:
         self._status = "new-born"
         self._type = "normal"
         self._name = "name"
+        # triangular generates a bell curve random distribution
         self.health = int((random.triangular()*10))
+        # automatically grows one day
+        self.grow(10, 10)
 
     def report(self):
         age = round(self._days_growing//365.25, 1)
@@ -36,7 +39,10 @@ class Animal:
         return {'food_need': self._food_need, 'water_need': self._water_need}
 
     def grow(self, food, water):
-        if food >= self._food_need and water >= self._water_need:
+        if self.health <= 0:
+            # Holy meow, guys - that's so dark. Why would you add this???
+            print("this animal has been located to a nice farm in the countryside")
+        elif food >= self._food_need and water >= self._water_need:
             self._weight += self._growth_rate
             self._days_growing += 1
 
@@ -50,7 +56,7 @@ class Animal:
         valid = False
         while not valid:
             try:
-                food = input("food (1-10): ")
+                food = int(input("food (1-10): "))
                 if 0 < food <= 10:
                     valid = True
                 else:
@@ -60,7 +66,7 @@ class Animal:
         valid = False
         while not valid:
             try:
-                water = input("food (1-10): ")
+                water = int(input("food (1-10): "))
                 if 0 < water <= 10:
                     valid = True
                 else:
@@ -77,11 +83,25 @@ def main():
     print(generic_animal.report())
     # grow for one day
 
+    # let's manually grow it
+    generic_animal.manual_grow()
+    # report
+    print(generic_animal.report())
+
+    # auto grow- 6 months
+    generic_animal.auto_grow(30*3)
+    # report
+    generic_animal.report()
+
+    # auto grow- a year
+    generic_animal.auto_grow(366)
+
+
 
 
 
 if __name__ == "__main__":
-    main
+    main()
 
 
 

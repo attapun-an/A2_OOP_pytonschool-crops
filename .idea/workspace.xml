@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13e1653b-7f15-4f3b-976c-82d5f2abb2ee" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/animal_class.py" afterPath="$PROJECT_DIR$/animal_class.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,8 +28,8 @@
       <file leaf-file-name="animal_class.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/animal_class.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="76" column="16" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="49" column="30" lean-forward="false" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -472,8 +470,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/animal_class.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="76" column="16" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+        <state relative-caret-position="170">
+          <caret line="49" column="30" lean-forward="false" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
           <folding />
         </state>
       </provider>
